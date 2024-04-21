@@ -5,6 +5,7 @@
     --main-text-cl: #0e2f4b;
     --second-text-cl: #99a2aa;
     --placeholder-text-cl: #757575;
+    --btn-cl: #0e2f4b;
 
     /*  Title Color  */
     --hero-title-cl: #fff;
@@ -18,6 +19,7 @@
     --second-bg-cl: #f8f8f8;
     --third-bg-cl: #042c4b;
     --bg-btn: #fff;
+    --second-bg-btn: #fdc13d;
 }
 
 
@@ -64,8 +66,7 @@ body {
 
 .margin-wrap {
     margin: 0 120px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
 }
 
 ul, ol {
@@ -73,16 +74,48 @@ ul, ol {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
     color: black;
 }
 
-h2 {
-    line-height: 125%;
+.more-details-link {
+    font-size: 0.875em;
+
+    padding-left: 30px;
+
+    color: var(--main-text-cl);
 }
 
-h3 {
-    line-height: 133.333%;
+.btn {
+    display: inline-block;
+
+    font-size: 1.25rem;
+    line-height: 0.8;
+
+    padding: 28px 86px;
+
+    border-radius: 10px;
+
+    color: var(--btn-cl);
+    background-color: var(--second-bg-btn);
+}
+
+.title {
+    font-size: 3rem;
+    line-height: 1.25;
+
+    margin-bottom: 36px;
+    padding-top: 31px;
+
+    color: var(--second-title-cl);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    line-height: 1.33;
+
+    color: var(--main-text-cl);
 }
 
 p {
@@ -167,22 +200,22 @@ h1 {
 
 
 /*              SERVICES BLOCK              */
-.services-block {
+.postal-block {
     font-size: 1em;
 
     background-color: var(--second-bg-cl);
 }
 
-.services-block > div {
+.postal-block > div {
     position: relative;
 }
 
-.wrapper-form {
+.postal-wrapper-form {
     position: absolute;
     top: -128px;
 }
 
-.wrapper-form input[type="number"] {
+.postal-wrapper-form input[type="number"] {
     font-family: "Rubik", sans-serif;
     font-size: 16px;
 
@@ -226,20 +259,20 @@ h1 {
                 rgba(95, 98, 102, 0.17);
 }
 
-.col-xl-4 {
+.postal-content {
     display: flex;
 
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.col-xl-4-wrap {
+.postal-content-wrap {
     min-width: 400px;
 
     margin-top: 32px;
 }
 
-.col-xl-4-wrap > h2 {
+.postal-content-wrap > h2 {
     font-size: 3em;
     line-height: 125%;
 
@@ -253,19 +286,19 @@ h1 {
     margin-bottom: 18px;
 }
 
-.services-list {
+.postal-content-list {
     display: flex;
     flex-wrap: wrap;
     position: relative;
     z-index: 1;
 }
 
-.services-list > li {
+.postal-content-list > li {
     width: 370px;
     height: 180px;
 }
 
-.services-list > li > h3 {
+.postal-content-list > li > h3 {
     font-size: 1.5em;
     line-height: 133.333%;
 
@@ -276,20 +309,16 @@ h1 {
     color: var(--second-title-cl);
 }
 
-.services-list > li > a {
-    font-size: 0.875em;
 
-    padding-left: 30px;
-
-    color: var(--main-text-cl);
-}
-
-.service-img {
-    position: absolute;
+.map-img {
+    width: 260px;
+    height: 175px;
 
     right: 58px;
     bottom: 32px;
     z-index: -1;
+
+    position: absolute;
 }
 
 
@@ -300,24 +329,62 @@ h1 {
 }
 
 .export-code-wrapper {
-
+    padding-top: 120px;
+    padding-bottom: 180px;
 }
 
-.col-xl-7 {
+.export-title {
+    margin-bottom: 36px;
+}
+
+.export-text {
+    margin-bottom: 44px;
+}
+
+.export-content {
     width: 700px;
 }
 
-.col-xl-7 > h2 {
+.export-content > h2 {
     font-size: 3em;
 
     color: var(--first-title-cl);
 }
 
-.col-xl-7 > p {
+.export-content > p {
     color: var(--second-text-cl);
 }
 
 .export-link-wrap {
 
+}
+
+/*              FINANCES-BLOCK                 */
+.finances-block {
+    padding-top: 100px;
+}
+
+.finances-box-list {
+    max-width: 1170px;
+
+    padding: 52px 75px 40px;
+
+    background-color: var(--first-bg-cl);
+}
+
+.finances-title {
+    margin-top: 121px;
+}
+
+.list {
+}
+
+.finances-list {
+}
+
+.item {
+}
+
+.finances-item {
 }
 
