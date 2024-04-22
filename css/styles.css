@@ -114,6 +114,13 @@ a {
     background-color: var(--second-bg-btn);
 }
 
+.btn:hover,
+.btn:focus {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.54);
+    box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.55);
+    transition: all 0.3s;
+}
+
 .title {
     font-size: 3rem;
     line-height: 1.25;
@@ -447,7 +454,10 @@ header {
     font-family: "Rubik", sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
+
     color: var(--btn-cl);
+
+    cursor: pointer;
 }
 
 
